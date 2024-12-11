@@ -8,9 +8,13 @@ public class Gaji{
         masaKerja = input.nextInt();
         int jamLembur = input.nextInt();
 
-        /* Pekerjaan anda mulai dari sini */
+        int gajiBulanan = gaji(masaKerja);
+        int lemburBulanan = lembur(masaKerja);
 
-        /* Pekerjaan anda berakhir sini */
+        lemburBulanan*=jamLembur;
+        gajiBulanan+=lemburBulanan;
+
+        System.out.println(gajiBulanan);
 
         System.out.println(Gaji.class.getDeclaredMethods().length);
         System.out.println(Gaji.class.getDeclaredFields().length);
